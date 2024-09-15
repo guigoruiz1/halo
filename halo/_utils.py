@@ -9,7 +9,7 @@ from colorama import init
 from shutil import get_terminal_size
 from termcolor import colored
 
-init(autoreset=True)
+init(autoreset=True, strip=False)
 
 
 def is_supported():
