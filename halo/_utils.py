@@ -56,7 +56,7 @@ def get_environment():
         return "terminal"
 
 
-def colored_frame(frame, color):
+def colored_frame(frame, color, force_color=None):
     """Color the frame with given color and returns.
 
     Parameters
@@ -71,7 +71,7 @@ def colored_frame(frame, color):
     str
         Colored frame
     """
-    return colored(frame, color, attrs=["bold"], force_color=True)
+    return colored(frame, color, attrs=["bold"], force_color=force_color or False)
 
 
 def is_text_type(text):
